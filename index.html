@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ledgraco — Offshore Accounting & Audit Support for CPA Firms</title>
+  <meta name="description" content="CA-led offshore bookkeeping, audit support, and financial reporting for US CPA firms. Audit-ready deliverables, defined SLAs, and senior review on every engagement.">
+  <meta name="keywords" content="offshore accounting CPA firm India, outsource bookkeeping CPA firm, audit support India, offshore accounting India, CPA firm outsourcing">
+  <meta property="og:title" content="Ledgraco — Offshore Accounting & Audit Support for CPA Firms">
+  <meta property="og:description" content="CA-led offshore bookkeeping and audit support for US CPA firms. Audit-ready deliverables, defined SLAs.">
+  <meta property="og:url" content="https://ledgraco.com">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Hero ── */
+    .hero {
+      background: var(--navy);
+      padding: 96px 5% 80px;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 64px;
+      align-items: center;
+      min-height: 88vh;
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--amber-lt);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      color: var(--white);
+      font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+      font-weight: 300;
+      line-height: 1.15;
+      font-family: 'Source Serif 4', serif;
+      font-style: italic;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      font-weight: 600;
+      color: var(--amber-lt);
+    }
+
+    .hero-sub {
+      color: rgba(255,255,255,0.65);
+      font-size: 1.05rem;
+      margin-top: 24px;
+      max-width: 520px;
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+    }
+
+    /* ── Hero card ── */
+    .hero-card {
+      background: var(--white);
+      padding: 36px 32px;
+      border-top: 4px solid var(--amber);
+    }
+
+    .hero-card h3 {
+      font-size: 1rem;
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+
+    .hero-card-item {
+      display: flex;
+      gap: 14px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+
+    .hero-card-item:last-child { border-bottom: none; }
+
+    .hci-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--navy);
+      min-width: 130px;
+    }
+
+    .hci-val {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .hero-card-cta {
+      margin-top: 24px;
+      width: 100%;
+      text-align: center;
+      background: var(--amber);
+      color: var(--white);
+      padding: 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.9rem;
+      display: block;
+      transition: background 0.2s;
+    }
+
+    .hero-card-cta:hover { background: var(--amber-lt); }
+
+    /* ── Problem section ── */
+    .problem {
+      background: var(--off-white);
+      padding: 64px 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .problem-stat {
+      border-left: 3px solid var(--amber);
+      padding-left: 20px;
+      margin-bottom: 28px;
+    }
+
+    .problem-stat .num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .problem-stat .desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ── Services overview ── */
+    .services-intro {
+      padding: 80px 5%;
+    }
+
+    .services-intro .intro-text {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      margin-top: 48px;
+      align-items: start;
+    }
+
+    /* ── Who we serve ── */
+    .who {
+      background: var(--navy);
+      padding: 80px 5%;
+    }
+
+    .who h2 { color: var(--white); }
+    .who .amber-rule { background: var(--amber); }
+
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: rgba(255,255,255,0.08);
+      margin-top: 40px;
+    }
+
+    .who-item {
+      background: var(--navy);
+      padding: 32px 28px;
+    }
+
+    .who-item h3 {
+      color: var(--white);
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .who-item p {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
+
+    .who-tag {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--amber-lt);
+      background: rgba(184,128,42,0.15);
+      padding: 4px 10px;
+      border-radius: 2px;
+      margin-bottom: 14px;
+    }
+
+    /* ── Founder strip ── */
+    .founder {
+      background: var(--sage);
+      padding: 64px 5%;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .founder-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      filter: grayscale(20%);
+    }
+
+    .founder-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 3rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .founder blockquote {
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--navy);
+      line-height: 1.8;
+      margin: 20px 0;
+      border-left: 3px solid var(--amber);
+      padding-left: 20px;
+    }
+
+    .founder-name {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      color: var(--navy);
+      font-size: 0.95rem;
+    }
+
+    .founder-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-card { display: none; }
+      .problem { grid-template-columns: 1fr; gap: 32px; }
+      .services-intro .intro-text { grid-template-columns: 1fr; gap: 32px; }
+      .who-grid { grid-template-columns: 1fr; }
+      .founder { grid-template-columns: 1fr; }
+      .founder-photo-placeholder { aspect-ratio: 16/7; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <p class="hero-eyebrow">Offshore Accounting &amp; Audit Support · India</p>
+      <h1>Your CPA firm's <em>audit-ready</em> finance team, based in India</h1>
+      <p class="hero-sub">Bookkeeping, reconciliations, workpaper support, and month-end close — delivered by a Chartered Accountant with six years of US audit experience. Your SLAs. Your review. Our execution.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Book a discovery call</a>
+        <a href="cpa-firms.html" class="btn btn-ghost">See how it works</a>
+      </div>
+      <div class="cred-strip">
+        <span class="cred">CA (ICAI)</span>
+        <span class="cred">QuickBooks ProAdvisor L1 &amp; L2</span>
+        <span class="cred">Xero Advisor Certified</span>
+        <span class="cred">US GAAP &amp; IFRS</span>
+        <span class="cred">6+ Years US Audit Experience</span>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>What we handle for CPA firms</h3>
+      <div class="hero-card-item">
+        <div class="hci-label">PBC Preparation</div>
+        <div class="hci-val">Schedules formatted to your audit programme</div>
+      </div>
+      <div class="hero-card-item">
+        <div class="hci-label">Reconciliations</div>
+        <div class="hci-val">Bank, AR, AP — exceptions flagged for review</div>
+      </div>
+      <div class="hero-card-item">
+        <div class="hci-label">Month-End Close</div>
+        <div class="hci-val">Journal entries, accruals, trial balance</div>
+      </div>
+      <div class="hero-card-item">
+        <div class="hci-label">Workpaper Support</div>
+        <div class="hci-val">Lead schedules, flux analysis, tie-out</div>
+      </div>
+      <div class="hero-card-item">
+        <div class="hci-label">Year-End Close</div>
+        <div class="hci-val">Full close support, draft financials</div>
+      </div>
+      <div class="hero-card-item">
+        <div class="hci-label">GL Maintenance</div>
+        <div class="hci-val">Transaction posting, clean-up, coding</div>
+      </div>
+      <a href="contact.html" class="hero-card-cta">Book a free 30-min call →</a>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <div class="trust-bar">
+    <div class="trust-item"><strong>CA-qualified</strong> engagement lead</div>
+    <div class="trust-item"><strong>QC review</strong> on every deliverable</div>
+    <div class="trust-item"><strong>48-hour</strong> standard turnaround</div>
+    <div class="trust-item"><strong>NDA</strong> signed at engagement start</div>
+    <div class="trust-item"><strong>Microsoft 365</strong> secure environment</div>
+    <div class="trust-item"><strong>US GAAP</strong> compliant outputs</div>
+  </div>
+
+  <!-- Problem -->
+  <section class="problem">
+    <div>
+      <div class="amber-rule"></div>
+      <h2>The staffing problem every CPA firm is facing</h2>
+      <p class="mt-16" style="color:var(--muted); font-size:0.95rem; line-height:1.8;">Over 75% of current US CPAs are approaching retirement age. Domestic accounting graduates are declining. Firms that cannot scale their delivery capacity are turning away clients, missing deadlines, and burning out their senior staff.</p>
+      <p class="mt-16" style="color:var(--muted); font-size:0.95rem; line-height:1.8;">Ledgraco exists to solve that capacity problem — not with a staffing agency, but with a CA-qualified engagement lead who understands how US audit firms work, takes full responsibility for delivery quality, and integrates into your existing workflow.</p>
+      <a href="cpa-firms.html" class="btn btn-outline mt-32">See how we work with CPA firms</a>
+    </div>
+    <div>
+      <div class="problem-stat">
+        <div class="num">200,000+</div>
+        <div class="desc">accounting roles currently vacant across the US, per Bureau of Labor Statistics projections</div>
+      </div>
+      <div class="problem-stat">
+        <div class="num">40–60%</div>
+        <div class="desc">typical cost saving when CPA firms move audit support and bookkeeping offshore to India</div>
+      </div>
+      <div class="problem-stat">
+        <div class="num">10+ hrs</div>
+        <div class="desc">average IST–US time-zone overlap each day — meaning your work progresses overnight</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services overview -->
+  <section class="services-intro">
+    <div class="amber-rule"></div>
+    <h2>What we deliver</h2>
+    <div class="intro-text">
+      <div>
+        <ul class="service-list">
+          <li>
+            <span class="icon">◆</span>
+            <div><strong>Audit &amp; Assurance Support</strong><span>PBC preparation, workpaper organisation, lead schedules, sampling support, control testing documentation</span></div>
+          </li>
+          <li>
+            <span class="icon">◆</span>
+            <div><strong>Monthly Bookkeeping</strong><span>Transaction recording, bank reconciliations, AR/AP management, GL maintenance in QuickBooks, Xero, NetSuite, or Sage</span></div>
+          </li>
+          <li>
+            <span class="icon">◆</span>
+            <div><strong>Month-End &amp; Year-End Close</strong><span>Journal entries, accruals, prepayments, depreciation, closing entries, draft financial statements</span></div>
+          </li>
+          <li>
+            <span class="icon">◆</span>
+            <div><strong>Financial Statement Preparation</strong><span>Income statement, balance sheet, cash flow statement — US GAAP or IFRS compliant, reviewer-ready</span></div>
+          </li>
+          <li>
+            <span class="icon">◆</span>
+            <div><strong>Reconciliations</strong><span>Bank, intercompany, AR ageing, AP ageing, balance sheet — exceptions flagged before delivery</span></div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="card">
+          <span class="label">Our quality process</span>
+          <h3>Every deliverable is reviewed before it reaches you</h3>
+          <p class="mt-8">We work inside your systems, follow your firm's workflow and formatting requirements, and apply a QC review layer before any output is returned to your team. The supervising partner at your firm reviews completed work — we never present work directly to your clients.</p>
+          <p class="mt-16"><strong style="font-family:'DM Sans',sans-serif; color:var(--navy);">Engagement structure:</strong></p>
+          <ul class="service-list mt-8">
+            <li><span class="icon">◆</span><div><strong>Discovery call</strong><span>Understand your workflow, software, and peak-season needs</span></div></li>
+            <li><span class="icon">◆</span><div><strong>Engagement letter &amp; NDA</strong><span>Scope, SLAs, confidentiality, and access protocols confirmed in writing</span></div></li>
+            <li><span class="icon">◆</span><div><strong>Onboarding</strong><span>System access, format preferences, communication cadence — 48 hours</span></div></li>
+            <li><span class="icon">◆</span><div><strong>Delivery</strong><span>Work delivered to agreed schedule; QC reviewed; exceptions flagged</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who we serve -->
+  <section class="who">
+    <div class="amber-rule"></div>
+    <h2>Who we work with</h2>
+    <div class="who-grid">
+      <div class="who-item">
+        <div class="who-tag">Primary</div>
+        <h3>US CPA Firms</h3>
+        <p>Small to mid-size accounting practices (5–50 staff) needing reliable offshore audit support, bookkeeping, and month-end capacity without adding permanent headcount.</p>
+      </div>
+      <div class="who-item">
+        <div class="who-tag">Also serve</div>
+        <h3>Australian &amp; UK Accounting Firms</h3>
+        <p>Practices in Australia, the UK, and Canada facing similar staffing constraints — particularly those using Xero and looking for a time-zone-compatible offshore partner.</p>
+      </div>
+      <div class="who-item">
+        <div class="who-tag">Future</div>
+        <h3>International Finance Teams</h3>
+        <p>CFOs and controllers at mid-market businesses operating across borders who need structured financial reporting, reconciliation support, and audit preparation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder -->
+  <section class="founder" id="founder">
+    <div class="founder-photo-placeholder">DT</div>
+    <div>
+      <div class="amber-rule"></div>
+      <span class="label">About the founder</span>
+      <h2 style="color:var(--navy);">Built by someone who has done the work</h2>
+      <blockquote>"I have spent six years working on US audit engagements and two years implementing Workday Financial Management for enterprise clients. I know what a CPA firm partner needs when they delegate work — accuracy, on-time delivery, and zero surprises. That is what Ledgraco is built to provide."</blockquote>
+      <div class="founder-name">Dinesh Talreja</div>
+      <div class="founder-title">Chartered Accountant (ICAI) · Founder, Ledgraco</div>
+      <div class="cred-strip mt-24">
+        <span class="cred">CA (ICAI)</span>
+        <span class="cred">QuickBooks ProAdvisor L1 &amp; L2</span>
+        <span class="cred">Xero Advisor Certified</span>
+        <span class="cred">6+ Yrs US Audit</span>
+        <span class="cred">10+ Yrs India Accounting</span>
+      </div>
+      <a href="about.html" class="btn btn-outline mt-24">Read the full story</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div>
+      <h2>Ready to add capacity without adding headcount?</h2>
+      <p>Book a free 30-minute discovery call. No commitment, no pitch — just a conversation about your firm's workflow and whether we are a fit.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Book a discovery call</a>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="components.js"></script>
+</body>
+</html>

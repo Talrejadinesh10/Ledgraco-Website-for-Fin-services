@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Discovery Call — Ledgraco</title>
+  <meta name="description" content="Book a free 30-minute discovery call with Dinesh Talreja, CA. Talk directly with the person who will lead your engagement.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-hero {
+      background: var(--navy);
+      padding: 72px 5% 64px;
+    }
+    .page-hero h1 { color: var(--white); font-family: 'Source Serif 4', serif; font-style: italic; font-weight: 300; }
+    .page-hero p { color: rgba(255,255,255,0.65); margin-top: 16px; max-width: 540px; }
+
+    .contact-layout {
+      padding: 72px 5%;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .contact-form { }
+
+    .contact-form h2 { color: var(--navy); margin-bottom: 6px; }
+    .contact-form p { color: var(--muted); font-size: 0.92rem; margin-bottom: 28px; }
+
+    .contact-sidebar { }
+
+    .sidebar-block {
+      background: var(--off-white);
+      border-top: 3px solid var(--amber);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    .sidebar-block h3 { font-size: 0.95rem; color: var(--navy); margin-bottom: 14px; }
+
+    .contact-detail {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      font-size: 0.88rem;
+    }
+
+    .contact-detail .icon {
+      color: var(--amber);
+      font-size: 1rem;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    .contact-detail a { color: var(--text); }
+    .contact-detail a:hover { color: var(--amber); }
+
+    .what-to-expect li {
+      font-size: 0.88rem;
+      color: var(--muted);
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+    }
+    .what-to-expect li:last-child { border-bottom: none; }
+    .what-to-expect li::before { content: "◆"; color: var(--amber); font-size: 0.6rem; margin-top: 5px; flex-shrink: 0; }
+
+    .form-submit-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .form-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    @media (max-width: 900px) {
+      .contact-layout { grid-template-columns: 1fr; }
+      .contact-sidebar { order: -1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <section class="page-hero">
+    <div class="amber-rule"></div>
+    <span class="label">Get in touch</span>
+    <h1>Let's talk about your firm's needs</h1>
+    <p>Book a free 30-minute call with Dinesh directly. No sales process, no pitch deck — just a direct conversation about whether Ledgraco is the right fit for your firm.</p>
+  </section>
+
+  <section class="contact-layout">
+
+    <!-- Form -->
+    <div class="contact-form">
+      <h2>Send us a message</h2>
+      <p>Fill in the form and we will respond within one business day. For faster response, email directly: <a href="mailto:dinesh@ledgraco.com" style="color:var(--amber);">dinesh@ledgraco.com</a></p>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="grid-2" style="gap:16px;">
+          <div class="form-group">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="first_name" required placeholder="Jane">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="last_name" required placeholder="Smith">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" required placeholder="jane@smithcpa.com">
+        </div>
+
+        <div class="form-group">
+          <label for="firm">Firm / company name</label>
+          <input type="text" id="firm" name="firm" placeholder="Smith CPA Associates">
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="">Select country</option>
+            <option>United States</option>
+            <option>Australia</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="service">What are you looking for help with?</label>
+          <select id="service" name="service">
+            <option value="">Select</option>
+            <option>Audit support &amp; PBC preparation</option>
+            <option>Monthly bookkeeping</option>
+            <option>Month-end / year-end close</option>
+            <option>Financial statement preparation</option>
+            <option>Reconciliations</option>
+            <option>Not sure — want to discuss</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell us about your situation</label>
+          <textarea id="message" name="message" placeholder="What does your current workflow look like? What capacity pressure are you facing? What software does your firm use?"></textarea>
+        </div>
+
+        <div class="form-submit-row">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <span class="form-note">We respond within 1 business day.</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="contact-sidebar">
+
+      <div class="sidebar-block">
+        <h3>Contact details</h3>
+        <div class="contact-detail">
+          <span class="icon">✉</span>
+          <div><a href="mailto:dinesh@ledgraco.com">dinesh@ledgraco.com</a></div>
+        </div>
+        <div class="contact-detail">
+          <span class="icon">☎</span>
+          <div><a href="tel:+918878900171">+91 88789 00171</a><br><span style="font-size:0.78rem; color:var(--muted);">India · available IST business hours</span></div>
+        </div>
+        <div class="contact-detail">
+          <span class="icon">🔗</span>
+          <div><a href="https://linkedin.com/in/ca-dinesh-talreja-590598106" target="_blank" rel="noopener">linkedin.com/in/ca-dinesh-talreja</a></div>
+        </div>
+        <div class="contact-detail">
+          <span class="icon">🕐</span>
+          <div><strong>Response time:</strong> within 1 business day<br><span style="font-size:0.78rem; color:var(--muted);">IST · UTC+5:30</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>What to expect on a discovery call</h3>
+        <ul class="what-to-expect" style="list-style:none;">
+          <li>30 minutes — no longer unless you want to continue</li>
+          <li>You speak directly with Dinesh Talreja, CA</li>
+          <li>We ask about your firm's workflow and current pain points</li>
+          <li>We explain how we work and what we can handle</li>
+          <li>We tell you honestly if we are not the right fit</li>
+          <li>No sales pressure, no follow-up unless you ask</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>Preparing for the call</h3>
+        <p style="font-size:0.85rem; color:var(--muted); line-height:1.65;">It helps to know: what software your firm uses, what type of engagements you handle most, and what your biggest capacity pressure is right now. Nothing formal — just a conversation.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="components.js"></script>
+</body>
+</html>

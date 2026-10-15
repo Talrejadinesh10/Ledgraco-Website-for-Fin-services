@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Ledgraco — Dinesh Talreja, Chartered Accountant</title>
+  <meta name="description" content="Ledgraco is led by Dinesh Talreja, a Chartered Accountant with 6+ years of US audit experience and 10+ years of Indian accounting and compliance expertise.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-hero {
+      background: var(--navy);
+      padding: 72px 5% 64px;
+    }
+    .page-hero h1 { color: var(--white); font-family: 'Source Serif 4', serif; font-style: italic; font-weight: 300; }
+    .page-hero p { color: rgba(255,255,255,0.65); margin-top: 16px; max-width: 600px; }
+
+    .founder-full {
+      padding: 80px 5%;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .founder-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 4rem;
+      color: rgba(255,255,255,0.2);
+      position: sticky;
+      top: 80px;
+    }
+
+    .founder-content h2 { color: var(--navy); margin-bottom: 8px; }
+    .founder-content .founder-title { font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: var(--muted); margin-bottom: 28px; }
+
+    .founder-content p {
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+
+    .exp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--border);
+      margin: 40px 0;
+    }
+
+    .exp-item {
+      background: var(--off-white);
+      padding: 24px;
+    }
+
+    .exp-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--amber);
+      line-height: 1;
+    }
+
+    .exp-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    .cred-section {
+      background: var(--sage);
+      padding: 56px 5%;
+    }
+
+    .cred-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      background: var(--border);
+      margin-top: 32px;
+    }
+
+    .cred-item {
+      background: var(--white);
+      padding: 24px 28px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .cred-badge {
+      width: 40px;
+      height: 40px;
+      background: var(--navy);
+      color: var(--amber-lt);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .cred-item h4 { font-size: 0.9rem; color: var(--navy); margin-bottom: 4px; }
+    .cred-item p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+    .why-ledgraco {
+      padding: 80px 5%;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .value-item { border-top: 3px solid var(--amber); padding-top: 20px; }
+    .value-item h3 { font-size: 1rem; color: var(--navy); margin-bottom: 10px; }
+    .value-item p { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+
+    @media (max-width: 900px) {
+      .founder-full { grid-template-columns: 1fr; }
+      .founder-photo-placeholder { aspect-ratio: 16/7; position: static; }
+      .exp-grid { grid-template-columns: 1fr 1fr; }
+      .cred-list { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .exp-grid { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <section class="page-hero">
+    <div class="amber-rule"></div>
+    <span class="label">About Ledgraco</span>
+    <h1>Built on experience, not ambition</h1>
+    <p>Ledgraco is a CA-led professional services firm delivering offshore accounting and audit support. We are not a platform, a marketplace, or a staffing agency. We are a specialist practice led by a Chartered Accountant who has done this work.</p>
+  </section>
+
+  <!-- Founder full -->
+  <section class="founder-full" id="founder">
+    <div class="founder-photo-placeholder">DT</div>
+    <div class="founder-content">
+      <div class="amber-rule"></div>
+      <h2>Dinesh Talreja</h2>
+      <p class="founder-title">Chartered Accountant (ICAI) · Founder &amp; Engagement Lead · Ledgraco</p>
+
+      <p>I qualified as a Chartered Accountant in 2018. Since then, I have spent six years working on US audit engagements — supporting CPA firms and international audit teams with workpapers, reconciliations, financial statement preparation, and audit support across multiple industries and jurisdictions.</p>
+
+      <p>Before that, and running in parallel, I spent over a decade managing Indian accounting and tax compliance — GST, TDS, income tax, ROC filings, payroll — for businesses ranging from startups to mid-size enterprises. I understand the Indian regulatory environment from the inside, not from a textbook.</p>
+
+      <p>I also spent two years implementing and supporting Workday Financial Management for enterprise clients — configuring finance modules, building reports, and troubleshooting reconciliations for organisations that had just completed a Workday go-live.</p>
+
+      <p>I launched Ledgraco because I saw the same problem repeatedly: CPA firms and international businesses were trying to find someone who could handle the technical work — not manage it at arm's length, but actually do it — and who understood both sides of the equation. Not many people do.</p>
+
+      <div class="exp-grid">
+        <div class="exp-item">
+          <div class="exp-num">6+</div>
+          <div class="exp-label">years working on US audit engagements</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-num">10+</div>
+          <div class="exp-label">years Indian accounting &amp; tax compliance</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-num">2018</div>
+          <div class="exp-label">qualified as Chartered Accountant (ICAI)</div>
+        </div>
+      </div>
+
+      <p>Ledgraco is deliberately focused. We work on offshore accounting and audit support for CPA firms. We do not try to be a full-service BPO, a technology company, or a staffing platform. Every engagement is led by me. Every deliverable is reviewed by me before it reaches your team.</p>
+
+      <p>If you want to speak directly with the person who will do your work — not a sales representative — book a discovery call.</p>
+
+      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:28px;">
+        <a href="contact.html" class="btn btn-primary">Book a discovery call</a>
+        <a href="https://linkedin.com/in/ca-dinesh-talreja-590598106" target="_blank" rel="noopener" class="btn btn-outline">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credentials -->
+  <section class="cred-section">
+    <div class="amber-rule"></div>
+    <h2>Credentials &amp; qualifications</h2>
+    <div class="cred-list">
+      <div class="cred-item">
+        <div class="cred-badge">CA<br>ICAI</div>
+        <div>
+          <h4>Chartered Accountant (ICAI)</h4>
+          <p>Member of the Institute of Chartered Accountants of India. Qualified 2018. ICAI is one of the largest professional accounting bodies in the world, with rigorous examination and continuing education requirements.</p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-badge">QB<br>L1</div>
+        <div>
+          <h4>QuickBooks ProAdvisor — Level 1</h4>
+          <p>Certified QuickBooks Online ProAdvisor at Level 1. Qualified to advise on and work within QuickBooks Online for bookkeeping, reporting, and client account management.</p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-badge">QB<br>L2</div>
+        <div>
+          <h4>QuickBooks ProAdvisor — Level 2</h4>
+          <p>Certified at Level 2, covering advanced QuickBooks functionality including class and location tracking, custom reporting, and complex client scenarios.</p>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-badge">XERO<br>ADV</div>
+        <div>
+          <h4>Xero Advisor Certified</h4>
+          <p>Xero Advisor Certification covering bookkeeping, bank reconciliation, financial reporting, and Xero ecosystem tools — qualifying for work on Xero-based client engagements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Ledgraco -->
+  <section class="why-ledgraco">
+    <div class="amber-rule"></div>
+    <h2>What makes Ledgraco different</h2>
+    <div class="values-grid">
+      <div class="value-item">
+        <h3>Named accountability</h3>
+        <p>You know exactly who is doing the work. Dinesh Talreja is the engagement lead on every client file — not a junior resource managed remotely. That is a deliberate choice, not a constraint.</p>
+      </div>
+      <div class="value-item">
+        <h3>Audit-first mindset</h3>
+        <p>Six years in US audit means deliverables are prepared the way an auditor thinks about them — documented, traceable, and ready for review. Not bookkeeping that needs to be reworked before it can be audited.</p>
+      </div>
+      <div class="value-item">
+        <h3>No sales layer</h3>
+        <p>When you book a discovery call, you speak with the founder. When you have a question during an engagement, you reach the person doing the work. There is no account manager between you and the work.</p>
+      </div>
+      <div class="value-item">
+        <h3>Defined scope</h3>
+        <p>We do not try to do everything. We focus on what we do well — bookkeeping, audit support, and month-end close — and we are honest about what falls outside our scope.</p>
+      </div>
+      <div class="value-item">
+        <h3>Secure by design</h3>
+        <p>Microsoft 365 environment. MFA enforced. NDA signed before any work begins. Access-controlled file storage. Password manager in use. These are baseline requirements, not differentiators — but we take them seriously.</p>
+      </div>
+      <div class="value-item">
+        <h3>Honest about fit</h3>
+        <p>Not every firm needs offshore support. Not every offshore relationship works. We will tell you on the discovery call if we do not think we are the right fit — and if we are, we will say exactly why and how.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div>
+      <h2>Speak with the founder directly</h2>
+      <p>30-minute discovery call. You will speak with Dinesh — no intermediary, no pitch deck.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Book a call</a>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="components.js"></script>
+</body>
+</html>
